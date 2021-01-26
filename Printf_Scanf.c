@@ -1,7 +1,7 @@
 /*
 *Autor: Roman Duraník
 *Copyright: 2021
-
+*/
 
 #include<stdio.h>
 #include<conio.h>
