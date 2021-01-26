@@ -12,7 +12,7 @@ int main()
 
 	printf("Aku znamku si dostal?: ");
 
-	scanf_s("%d", &y);
+	scanf("%d", &y);
 
 	switch (y)
 	{
