@@ -8,30 +8,12 @@
 int main()
 {
     char str[100];
-
     int i;
-
-
-
+    
     printf("Zadaj cislo: ");
-
-
-
     scanf("%d", &i);
-
-
-
+    
     printf("\nZadal si: %d\n", i);
-
-
-
     return 0;
 
 }
-
-   
-   
-
-
-
-
