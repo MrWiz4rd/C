@@ -1,5 +1,5 @@
 /*
-*Autor: Roman Duraník
+*Autor: Roman DuranÃ­k
 *Copyright: 2021
 
 
@@ -29,7 +29,8 @@ int main()
 
 }
 
-   */ 
+   
+   
 
 
 
