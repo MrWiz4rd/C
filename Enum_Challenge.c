@@ -4,13 +4,13 @@
 int main()
 {
 	 enum Company {GOOGLE, FACEBOOK, XEROX, YAHOO, EBAY, MICROSOFT};
-	 enum Company prvy = XEROX;
-	 enum Company druhy = GOOGLE;
-	 enum Company treti = EBAY;
+	 enum Company xerox = XEROX;
+	 enum Company google = GOOGLE;
+	 enum Company ebay = EBAY;
 
-	printf("%d\n", prvy);
-	printf("%d\n", druhy);
-	printf("%d\n", treti);
+	printf("Hodnota premennej xerox je: %d\n", xerox);
+	printf("Hodnota premennej google je: %d\n", google);
+	printf("Hodnota premennej ebay je: %d\n", ebay);
 
 	return 0;
 	
