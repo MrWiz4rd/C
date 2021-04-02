@@ -1,5 +1,5 @@
 /*
-*Autor: Roman Duraník
+*Autor: Mr.Wizard
 *Copyright : 2021
 */
 
