@@ -9,7 +9,7 @@
 int main()
 {
 	int r = 6;
-	float pi = 3.14;
+	float pi = 3.14f;
 	double obvod, obsah;
 
 	obvod = 2 * pi * r;
