@@ -4,7 +4,7 @@
 
 int main()
 {
-	printf("Kalkulacka by Roman Duranik \n\n\n\n");
+	printf("Kalkulacka by Mr.Wizard \n\n\n\n");
 
 	float a, b, vysledok;
 	char znak;
