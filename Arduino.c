@@ -7,12 +7,18 @@ Servo Servo4;
 Servo Servo5;
 Servo Servo6;
 void setup() {
+  Servo1.write(90);
+  Servo2.write(90);
+  Servo3.write(90);
+  Servo4.write(90);
+  Servo5.write(90);
+  Servo6.write(90);
   Servo1.attach(3);
   Servo2.attach(4);
   Servo3.attach(5);
   Servo4.attach(6);
-   Servo5.attach(7);
-    Servo6.attach(8);
+  Servo5.attach(7);
+  Servo6.attach(8);
   pinMode(3,OUTPUT);
   pinMode(4,OUTPUT);
   pinMode(5,OUTPUT);
@@ -20,6 +26,8 @@ void setup() {
   pinMode(7, OUTPUT);
   pinMode(8, OUTPUT);
   Serial.begin(9600);
+  
+  
   
   
   
