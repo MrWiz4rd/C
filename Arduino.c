@@ -1,4 +1,3 @@
-
 #include <Servo.h> 
 int state = 0;
 Servo Servo1;
@@ -23,30 +22,81 @@ void setup() {
   Serial.begin(9600);
   
   
+  
 }
 void loop() {
   if(Serial.available() > 0){ // Checks whether data is comming from the serial port
     state = Serial.read(); // Reads the data from the serial port
     printf("aa");
-     if (state == '0') {
-  Servo1.write(0); 
-  Servo2.write(0);
-  Servo3.write(0);
-  Servo4.write(0);
-  Servo5.write(0);
-  Servo6.write(0);
+     if (state == 16) {
+  Servo1.write(360); 
+  
   delay(1000); 
   Serial.println("LED: OFF"); // Send back, to the phone, the String "LED: ON"
   state = 0;
  }
- else if (state == '1') {
-  Servo1.write(180); 
-  Servo2.write(180);
-  Servo3.write(180);
-  Servo4.write(180);
-  Serial.println("servo4 ");
-  Servo5.write(180);
-  Servo6.write(180);
+ else if (state == 17) {
+  Servo1.write(0); 
+  delay(1000); 
+  Serial.println("LED: ON");
+  state = 0;
+ } 
+ else if (state == 18) {
+  Servo2.write(360); 
+  delay(1000); 
+  Serial.println("LED: ON");
+  state = 0;
+ }
+ else if (state == 19) {
+  Servo2.write(0); 
+  delay(1000); 
+  Serial.println("LED: ON");
+  state = 0;
+ }
+ else if (state == 20) {
+  Servo3.write(360); 
+  delay(1000); 
+  Serial.println("LED: ON");
+  state = 0;
+ } 
+ else if (state == 21) {
+  Servo3.write(0); 
+  delay(1000); 
+  Serial.println("LED: ON");
+  state = 0;
+ } 
+ else if (state == 22) {
+  Servo4.write(360); 
+  delay(1000); 
+  Serial.println("LED: ON");
+  state = 0;
+ } 
+ else if (state == 23) {
+  Servo4.write(0); 
+  delay(1000); 
+  Serial.println("LED: ON");
+  state = 0;
+ }   
+ else if (state == 24) {
+  Servo5.write(360); 
+  delay(1000); 
+  Serial.println("LED: ON");
+  state = 0;
+ } 
+ else if (state == 25) {
+  Servo5.write(0); 
+  delay(1000); 
+  Serial.println("LED: ON");
+  state = 0;
+ } 
+ else if (state == 26) {
+  Servo6.write(360); 
+  delay(1000); 
+  Serial.println("LED: ON");
+  state = 0;
+ } 
+ else if (state == 27) {
+  Servo6.write(0); 
   delay(1000); 
   Serial.println("LED: ON");
   state = 0;
