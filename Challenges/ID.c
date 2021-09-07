@@ -6,6 +6,13 @@
 #include<stdio.h>
 #include<conio.h>
 #include<windows.h>
+
+int medzera()
+{
+	printf("\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n");
+}
+
+
 int main()
 {
 	int ID;
@@ -18,32 +25,35 @@ int main()
 	scanf("%d", &h);
 	if (h != heslo)
 	{
+		printf("Zadali ste zle heslo");
 		return;
 	}
 	else
 	{
-		printf("\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n");
+		medzera();
 		printf("Zadajte vase ID: \n");
 		scanf("%d", &ID);
 		
 		switch (ID)
 		{
 		case 6218:
-			printf("Vitajte Roman!\n\n\n\n\n\n");
+			medzera();
+			printf("Vitajte Roman!\n\n");
 			break;
 		case 15973:
-			printf("Vitajte Vlado!\n\n\n\n\n\n");
+			medzera();
+			printf("Vitajte Vlado!\n\n");
 		default:
-			printf("Neznámy user");
+			printf("Neznamy user");
 			break;
 		}
 
 		if (ID == 6218 || ID == 15973)
 		{
-			printf("Kolko hodín si odpracoval?: \n");
+			printf("Kolko hodin si odpracoval?: \n");
 			scanf("%d", &hod);
 			vyplata = 5.5f * hod;
-			printf("Zarobil si %.2f €", vyplata);
+			printf("Zarobil si %.2f €\n\n\n\n\n", vyplata);
 		}
 		else
 		{
