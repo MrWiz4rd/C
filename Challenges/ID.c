@@ -13,6 +13,7 @@ int medzera()
 }
 
 
+
 int main()
 {
 	int ID;
@@ -20,20 +21,21 @@ int main()
 	float vyplata;
 	int heslo = 7355608;
 	int h;
+	int p = 1;
+	int OstavajucePokusy = 3;
+
+
 
 	printf("Zadaj heslo: ");
 	scanf("%d", &h);
-	if (h != heslo)
+
+	if (h == heslo)
 	{
-		printf("Zadali ste zle heslo");
-		return;
-	}
-	else
-	{
+
 		medzera();
 		printf("Zadajte vase ID: \n");
 		scanf("%d", &ID);
-		
+
 		switch (ID)
 		{
 		case 6218:
@@ -52,19 +54,20 @@ int main()
 		{
 			printf("Kolko hodin si odpracoval?: \n");
 			scanf("%d", &hod);
-			vyplata = 5.5f * hod;
+			vyplata = 5.5 * hod;
 			printf("Zarobil si %.2f €\n\n\n\n\n", vyplata);
-		}
-		else
-		{
-			return;
 		}
 
 	}
+	else
+	{
+		for (p = 1; p <= 3; p++)
+		{
+			printf("Zadane heslo je zle zadaj ho znova:         //Ostava ti %d pokusov\n", OstavajucePokusy);
+			scanf("%d", &h);
+			OstavajucePokusy -= 1;
+		}
 
 
-
-
-
-
+	}
 }
