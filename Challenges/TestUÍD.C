@@ -30,7 +30,7 @@ int main()
 	
 	for (p = 1; p <= 3; p++ )
 	 {
-	 	printf("Zadane heslo je zle zadaj ho znova: \n        Ostava ti %d pokusov", OstavajucePokusy);
+	 	printf("Zadane heslo je zle zadaj ho znova:         //Ostava ti %d pokusov\n", OstavajucePokusy);
 	 	scanf("%d", &h);
 	 	OstavajucePokusy -= 1;
 	 	if (h != heslo)
@@ -71,7 +71,7 @@ int main()
 
 	}
 	 }
-		
+	
 	
 
 
