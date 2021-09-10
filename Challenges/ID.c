@@ -90,7 +90,7 @@ int main()
 		{
 			printf("Kolko hodin si odpracoval?: \n");
 			scanf("%d", &hod);
-			vyplata = 5.5 * hod;
+			vyplata = 5.5f * hod;
 			printf("Zarobil si %.2f €\n\n\n\n\n", vyplata);
 		}
 			}
