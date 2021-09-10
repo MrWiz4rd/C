@@ -38,11 +38,11 @@ int main()
 
 		switch (ID)
 		{
-		case 6218:
+		case 6315:
 			medzera();
 			printf("Vitajte Roman!\n\n");
 			break;
-		case 15973:
+		case 8423:
 			medzera();
 			printf("Vitajte Vlado!\n\n");
 		default:
