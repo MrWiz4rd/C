@@ -92,6 +92,7 @@ int main()
 			scanf("%d", &hod);
 			vyplata = 5.5f * hod;
 			printf("Zarobil si %.2f €\n\n\n\n\n", vyplata);
+			break;
 		}
 			}
 		}
