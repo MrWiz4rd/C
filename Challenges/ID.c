@@ -50,7 +50,7 @@ int main()
 			break;
 		}
 
-		if (ID == 6218 || ID == 15973)
+		if (ID == 6315 || ID == 8423)
 		{
 			printf("Kolko hodin si odpracoval?: \n");
 			scanf("%d", &hod);
@@ -66,8 +66,38 @@ int main()
 			printf("Zadane heslo je zle zadaj ho znova:         //Ostava ti %d pokusov\n", OstavajucePokusy);
 			scanf("%d", &h);
 			OstavajucePokusy -= 1;
+			if (heslo == h)
+			{
+				medzera();
+		printf("Zadajte vase ID: \n");
+		scanf("%d", &ID);
+
+		switch (ID)
+		{
+		case 6315:
+			medzera();
+			printf("Vitajte Roman!\n\n");
+			break;
+		case 8423:
+			medzera();
+			printf("Vitajte Vlado!\n\n");
+		default:
+			printf("Neznamy user");
+			return;
+		}
+
+		if (ID == 6315 || ID == 8426)
+		{
+			printf("Kolko hodin si odpracoval?: \n");
+			scanf("%d", &hod);
+			vyplata = 5.5 * hod;
+			printf("Zarobil si %.2f €\n\n\n\n\n", vyplata);
+		}
+			}
 		}
 
 
 	}
 }
+
+
