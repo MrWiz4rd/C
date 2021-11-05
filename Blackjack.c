@@ -8,10 +8,11 @@ int main()
 {
 		int PridanePeniaze, KonecnePeniaze, StavenePeniaze, Zostatok;
 	
+	srand(time(NULL));
 		
 	printf("*****************WELCOME TO THE BLACKJACK****************\n\n\n\n\n\n");
 	printf("Your starting money is %d\n\n\n\n\n", ZACIATOCNEPENIAZE);
-	printf("How much money you would like to add?: ", PridanePeniaze);
+	printf("How much money would you like to add?: ", PridanePeniaze);
 	scanf("%d", &PridanePeniaze);
 	
 	KonecnePeniaze = ZACIATOCNEPENIAZE + PridanePeniaze;
