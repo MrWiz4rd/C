@@ -24,5 +24,11 @@ int main()
 	Zostatok = KonecnePeniaze - StavenePeniaze;
 	printf("You bet %d and you have %d money left", StavenePeniaze, Zostatok);
 	
+	int kocka[6] = {1, 2, 3, 4, 5, 6};
+	
+
+
+	
+	
 		
 }
