@@ -1,35 +1,31 @@
-#include <stdio.h>
-#include <stdlib.h>
+/*
+*Autor: Mr.Wizard
+*Copyright: 2021
+*/
+
+
+#include<stdio.h>
+#include<conio.h>
+#include<stdlib.h>
+#include<math.h>
+#include<windows.h>
 #include<time.h>
+//#include<Wizard.h>
+
 
 #define ZACIATOCNEPENIAZE 10000
 
+
 int main()
 {
-		int PridanePeniaze, KonecnePeniaze, StavenePeniaze, Zostatok;
-	
-	srand(time(NULL));
-		
-	printf("*****************WELCOME TO THE BLACKJACK****************\n\n\n\n\n\n");
-	printf("Your starting money is %d\n\n\n\n\n", ZACIATOCNEPENIAZE);
-	printf("How much money would you like to add?: ", PridanePeniaze);
+	int PridanePeniaze, Zostatok;
+
+
+	printf("******************WELCOME TO THE BLACKJACK****************\n\n\n\n\n\nYour starting money is %d\n\n\n\n\n\n", ZACIATOCNEPENIAZE);
+
+	printf("You can add some money if you think you don't have enough!, How much would you like to add?: ");
 	scanf("%d", &PridanePeniaze);
-	
-	KonecnePeniaze = ZACIATOCNEPENIAZE + PridanePeniaze;
-	
-	printf("Your money is now %d\n\n", KonecnePeniaze);
-	
-	printf("How much money do you want to bet?: ");
-	scanf("%d", &StavenePeniaze);
-		
-	Zostatok = KonecnePeniaze - StavenePeniaze;
-	printf("You bet %d and you have %d money left", StavenePeniaze, Zostatok);
-	
-	int kocka[6] = {1, 2, 3, 4, 5, 6};
-	
+	Zostatok = ZACIATOCNEPENIAZE + PridanePeniaze;
+	printf("You have now %d€\n\n\n\n\n", Zostatok);
 
-
-	
-	
-		
 }
