@@ -1,5 +1,5 @@
 #include <stdio.h>
-#inclide <strings.h>
+#include <strings.h>
 
 typedef struct student {
     char priezvisko_meno[100];
